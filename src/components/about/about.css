@@ -1,0 +1,10 @@
+.header {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #ffffff;
+}
+
+.container {
+  padding: 10px;
+  border-left: 2px solid #ffffff;
+  margin: 4rem;
+}

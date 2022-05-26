@@ -1,11 +1,10 @@
 .footer {
   background-color: #0f0f0f;
-  position: fixed;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  bottom: 0;
-  width: 100%;
+  align-content: center;
+  height: 3rem;
 }
 
 .sign {
