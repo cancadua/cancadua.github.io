@@ -1,13 +1,12 @@
 .navbar {
-  background-color: #0f0f0f;
-  position: relative;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  background-color: #000000;
 }
 
-.navbar-home {
+.navbar a {
   text-decoration: none;
   padding: 0.6rem;
   font-size: 1.4em;
@@ -16,10 +15,11 @@
   transition: color 1s;
 }
 
-.navbar-home:hover {
+.navbar a:hover, a.active {
+  text-decoration: none;
   color: #d9e7ff;
 }
 
-.navbar-container {
+.navbar-left {
   margin-left: auto;
 }
