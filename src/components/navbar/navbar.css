@@ -1,5 +1,9 @@
 .navbar {
   display: flex;
+  position: sticky;
+  padding: 1rem;
+  top: 0;
+  border-bottom: solid 0.1rem #ffffff;
   flex-direction: row;
   flex-wrap: nowrap;
   overflow: hidden;
