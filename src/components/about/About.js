@@ -1,8 +1,9 @@
 import "./about.css";
+import {forwardRef} from "react";
 
-const About = () => {
+const About = (props, ref) => {
   return (
-    <div className={"container-left"}>
+    <div ref={ref} className={"container-left"}>
       <h1 className={"header"}> About me </h1>
       <h2 className={"header"}>
          Hello, I'm Adrian, third-year IT student and IT enthusiast.
@@ -11,4 +12,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default forwardRef(About);

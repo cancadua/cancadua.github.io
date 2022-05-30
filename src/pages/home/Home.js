@@ -1,5 +1,6 @@
 import { Navbar, Footer, About, Projects, Contact } from "../../components";
-import {forwardRef, useRef} from "react";
+import { useRef } from "react";
+import "./home.css";
 
 const Home = () => {
   const scrollToAbout = useRef(null);
@@ -13,18 +14,15 @@ const Home = () => {
   return (
     <div>
       <Navbar
+        about={executeScrollToAbout}
         projects={executeScrollToProjects}
+        contact={executeScrollToContact}
       />
-      <button onClick={executeScrollToAbout}>About</button>
-      <button onClick={executeScrollToProjects}>Projects</button>
-      <button onClick={executeScrollToContact}>Contact</button>
       <div>
         <About ref={scrollToAbout}/>
         <Projects ref={scrollToProjects}/>
         <Contact ref={scrollToContact}/>
       </div>
-      <div ref={scrollToProjects}/>
-      <div ref={scrollToContact}/>
       <Footer />
     </div>
   );

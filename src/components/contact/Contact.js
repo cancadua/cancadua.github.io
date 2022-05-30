@@ -1,8 +1,10 @@
 import "./contact.css";
+import {forwardRef} from "react";
 
-const Contact = () => {
+const Contact = (props, ref) => {
   return (
     <div
+      ref={ref}
       className={"container-left"}
       style={{
         animationDelay: "4s",
@@ -18,4 +20,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default forwardRef(Contact);

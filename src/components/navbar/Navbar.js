@@ -1,6 +1,6 @@
 import "./navbar.css";
 
-const Navbar = ({projects}) => {
+const Navbar = ({about, projects, contact}) => {
 
 
   return (
@@ -9,9 +9,9 @@ const Navbar = ({projects}) => {
         <a className="active" href="#home">Home</a>
       </div>
       <div className={'navbar-left'}>
-        <button>About</button>
+        <button onClick={about}>About</button>
         <button onClick={projects}>Projects</button>
-        <button>Contact</button>
+        <button onClick={contact}>Contact</button>
       </div>
     </div>
   );
