@@ -12,7 +12,7 @@ const Home = () => {
   const executeScrollToContact = () => scrollToContact.current.scrollIntoView()
 
   return (
-    <div>
+    <div className={'container'}>
       <Navbar
         about={executeScrollToAbout}
         projects={executeScrollToProjects}

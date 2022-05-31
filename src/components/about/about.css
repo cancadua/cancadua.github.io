@@ -4,6 +4,7 @@
 }
 
 .container-left {
+  height: 80vh;
   padding: 1rem;
   border-left: solid 2px #ffffff;
   margin: 4rem;

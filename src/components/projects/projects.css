@@ -8,6 +8,7 @@ h2 {
 }
 
 .container-right {
+  height: 80vh;
   opacity: 0;
   text-align: right;
   padding: 1rem;

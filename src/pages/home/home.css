@@ -1,7 +1,7 @@
-.scrollIntoView {
-    offset: 1rem 0;
+* {
+    scroll-margin-top: 6rem;
 }
 
-body {
-    margin: 5rem 0 0 0;
+.container {
+    margin-top: 6rem;
 }
