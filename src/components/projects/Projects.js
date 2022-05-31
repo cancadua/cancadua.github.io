@@ -1,8 +1,9 @@
 import "./projects.css";
+import {forwardRef} from "react";
 
-const Projects = () => {
+const Projects = (props, ref) => {
   return (
-    <div className={"container-right"}>
+    <div ref={ref} className={"container-right"}>
       <h1>My projects</h1>
       <h2>Notepad</h2>
       <h2>Login</h2>
@@ -12,4 +13,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default forwardRef(Projects);

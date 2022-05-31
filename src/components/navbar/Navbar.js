@@ -1,15 +1,15 @@
 import "./navbar.css";
 
-const Navbar = () => {
+const Navbar = ({about, projects, contact}) => {
+
+
   return (
     <div className="navbar">
-      <div>
-        <a className="active" href="#home">Home</a>
-      </div>
+      <a className="active">Home</a>
       <div className={'navbar-left'}>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+        <button onClick={about}>About</button>
+        <button onClick={projects}>Projects</button>
+        <button onClick={contact}>Contact</button>
       </div>
     </div>
   );
