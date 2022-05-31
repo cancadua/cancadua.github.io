@@ -4,6 +4,8 @@
 }
 
 .container-left {
+  z-index: -1;
+  position: relative;
   height: 80vh;
   padding: 1rem;
   border-left: solid 2px #ffffff;
