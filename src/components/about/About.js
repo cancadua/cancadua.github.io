@@ -3,10 +3,11 @@ import {forwardRef} from "react";
 
 const About = (props, ref) => {
   return (
-    <div ref={ref} className={"container-left"}>
-      <h1 className={"header"}> About me </h1>
-      <h2 className={"header"}>
-         Hello, I'm Adrian, third-year IT student and IT enthusiast.
+    <div ref={ref} className={"container-about"}>
+      <h1> About me </h1>
+      <h2 className={"content"}>
+        Hello, my name is Adrian. I'm third year IT student. Interested in full stack.
+        Currently focused on front end JavaScript & React.
       </h2>
     </div>
   );

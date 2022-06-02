@@ -1,16 +1,15 @@
-.header {
-  font-family: "Noto Sans JP", sans-serif;
-  color: #ffffff;
+.container-about .content {
+  padding: 8rem;
 }
 
-.container-left {
-  z-index: -1;
+.container-about {
+  z-index: 1;
   position: relative;
-  height: 80vh;
-  padding: 1rem;
+  height: 55vh;
+  padding: 8rem;
   border-left: solid 2px #ffffff;
   margin: 4rem;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-name: right-to-left;
 }
 

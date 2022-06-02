@@ -8,6 +8,7 @@
   flex-wrap: nowrap;
   overflow: hidden;
   background-color: #000000;
+  z-index: 2;
 }
 
 .navbar a, button {

@@ -1,0 +1,40 @@
+.container-contact {
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    z-index: 1;
+    position: relative;
+    height: 55vh;
+    padding: 8rem;
+    border-left: solid 2px #ffffff;
+    margin: 4rem;
+    animation-duration: 1.5s;
+    animation-name: right-to-left;
+}
+
+.container-contact .contact {
+    padding: 8rem;
+    flex-direction: column;
+    display: flex;
+    gap: 3rem;
+}
+
+.container-contact .link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes right-to-left {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    from {
+        transform: translate3d(100%, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
