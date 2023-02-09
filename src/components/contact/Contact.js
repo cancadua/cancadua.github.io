@@ -9,7 +9,7 @@ const Contact = (props, ref) => {
       <div className={'contact'}>
         <a>
           <h2>
-            <SiGmail style={{paddingRight: '1rem'}}/>adrian.p.galus@gmail.com
+            <SiGmail style={{paddingRight: '1rem'}}/>adr.galus@gmail.com
           </h2>
         </a>
         <a className={'link'} href={'https://github.com/cancadua'}>
@@ -19,7 +19,7 @@ const Contact = (props, ref) => {
         </a>
         <a className={'link'} href={'https://linkedin.com/in/adriangalus'}>
           <h2>
-            <SiLinkedin style={{paddingRight: '1rem'}}/>linkedin.com/in/adriangalus
+            <SiLinkedin style={{paddingRight: '1rem'}}/>linkedin.com/in/a-galus
           </h2>
         </a>
       </div>
