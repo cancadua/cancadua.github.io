@@ -26,6 +26,9 @@ export const Todo = () => {
                         <div className='tag'>
                             Redux
                         </div>
+                        <div className='tag'>
+                            TailwindCSS
+                        </div>
                     </div>
                 </div> :
                 <></>
