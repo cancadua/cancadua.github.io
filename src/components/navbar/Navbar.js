@@ -1,9 +1,5 @@
 import "./navbar.css";
-import {useState} from "react";
-
 const Navbar = ({about, projects, contact}) => {
-    const [isExpanded, setIsExpanded] = useState(false);
-
     return (
         <header className="header">
             <input className="menu-btn" type="checkbox" id="menu-btn"/>

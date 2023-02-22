@@ -1,6 +1,5 @@
 import "./projects.css";
-import {forwardRef, useState} from "react";
-import { Arrow } from "../Arrow";
+import {forwardRef} from "react";
 import {OpenBlog} from "./OpenBlog";
 import {CollectDog} from "./CollectDog";
 import {Todo} from "./Todo";

@@ -32,7 +32,6 @@ export const Todo = () => {
                     </div>
                 </div> :
                 <></>
-
             }
             <div style={{display: "flex", justifyContent: "center"}}>
                 <button style={ isDescriptionOpen ? {transform: 'rotate(180deg)',  transition: "all 0.1s ease-in-out"} : {transition: "all 0.1s ease-in-out"}} onClick={() => setIsDescriptionOpen(!isDescriptionOpen)}>
