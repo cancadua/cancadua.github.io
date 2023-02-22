@@ -4,9 +4,9 @@ import {forwardRef} from "react";
 const About = (props, ref) => {
   return (
     <div ref={ref} className="container-about">
-      <h1>About me</h1>
+      <h1>About</h1>
       <div className="about-text">
-        Hello, my name is Adrian. I'm graduate year IT student. Interested in full stack. Currently focused on front-end JavaScript & React.
+        Hello, my name is Adrian. I'm ambitious final semester student specialised in software engineering. Interested in fullstack, but for now focused on frontend (JS & React). I'm open-minded, flexible, eager to learn new skills and accept challenges.
       </div>
     </div>
   );
