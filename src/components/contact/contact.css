@@ -2,26 +2,43 @@
     animation-delay: 2s;
     animation-fill-mode: forwards;
     opacity: 0;
-    z-index: 1;
     position: relative;
-    height: 55vh;
-    padding: 8rem;
+    padding: 1rem;
     border-left: solid 2px #ffffff;
-    margin: 4rem;
     animation-duration: 1.5s;
     animation-name: right-to-left;
 }
 
 .container-contact .contact {
-    padding: 8rem;
+    gap: 1rem;
+    padding: 1rem;
     flex-direction: column;
     display: flex;
-    gap: 3rem;
 }
 
 .container-contact .link {
+    width: min-content;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: white;
     text-decoration: none;
     cursor: pointer;
+}
+
+.link div {
+    white-space: nowrap;
+}
+
+.text {
+    cursor: text;
+}
+
+@media (min-width:24rem) {
+    .container-contact .link {
+        font-size: 1.5rem;
+    }
 }
 
 @keyframes right-to-left {

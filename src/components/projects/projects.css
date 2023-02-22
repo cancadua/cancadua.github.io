@@ -1,52 +1,86 @@
-.header,
-li,
-ul,
-h1,
-h2 {
+.header, li, ul, h1, h2 {
   font-family: "Noto Sans JP", sans-serif;
   color: #ffffff;
 }
 
-.container-right {
-  z-index: 1;
-  justify-content: center;
-  align-content: center;
-  position: relative;
-  height: 55vh;
-  opacity: 0;
-  text-align: right;
-  padding: 8rem;
+.container-projects {
+  width: 100%;
+  padding: 1rem;
   border-right: solid 2px #ffffff;
-  margin: 4rem;
   animation-duration: 1.5s;
   animation-name: left-to-right;
   animation-delay: 1s;
   animation-fill-mode: forwards;
+  text-align: right;
+  opacity: 0;
 }
 
-.container-right .projects {
-  gap: 2rem;
-  padding: 8rem 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
+.container-projects .projects .img {
+  width: 100%;
+  aspect-ratio: 16/9;
 }
 
-.container-right .projects .img-container {
-
+.container-projects .projects .img-blurred {
+  filter: blur(8px);
+  width: 100%;
+  aspect-ratio: 16/9;
 }
 
-.container-right .projects img {
-  filter: blur(5px);
-  height: 9rem;
-  width: 16rem;
-}
-
-.container-right .projects img:hover {
+.container-projects .projects .img-blurred:hover {
   cursor: pointer;
   filter: blur(1px);
   animation: deblur 1s forwards;
+}
+
+.projects {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.project-container {
+  max-width: 32rem;
+  min-width: 12rem;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem
+}
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  border-radius: 0.6rem;
+  background: #0f3c4c;
+  font-weight: 900;
+  border: solid #777777 2px;
+  padding: 0.2rem;
+}
+
+.description {
+  text-align: left;
+  width: 0;
+  min-width: 100%;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 @keyframes deblur {

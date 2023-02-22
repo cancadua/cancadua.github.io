@@ -18,7 +18,7 @@ const Home = () => {
         projects={executeScrollToProjects}
         contact={executeScrollToContact}
       />
-      <div>
+      <div className='content'>
         <About ref={scrollToAbout}/>
         <Projects ref={scrollToProjects}/>
         <Contact ref={scrollToContact}/>

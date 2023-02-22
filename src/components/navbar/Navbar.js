@@ -1,18 +1,21 @@
 import "./navbar.css";
+import {useState} from "react";
 
 const Navbar = ({about, projects, contact}) => {
+    const [isExpanded, setIsExpanded] = useState(false);
 
+    return (
+        <header className="header">
+            <input className="menu-btn" type="checkbox" id="menu-btn"/>
+            <label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
+            <ul className="menu">
+                <li><button className='nav-button' onClick={about}>About</button></li>
+                <li><button className='nav-button' onClick={projects}>Projects</button></li>
+                <li><button className='nav-button' onClick={contact}>Contact</button></li>
+            </ul>
 
-  return (
-    <div className="navbar">
-      <a className="active">Home</a>
-      <div className={'navbar-left'}>
-        <button onClick={about}>About</button>
-        <button onClick={projects}>Projects</button>
-        <button onClick={contact}>Contact</button>
-      </div>
-    </div>
-  );
+        </header>
+    );
 };
 
 export default Navbar;
